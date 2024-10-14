@@ -48,9 +48,12 @@
                         <a href="mailto:name@email.com">michael@connaker.org</a>
                     </div>
                     <p class="lead mb-5">
-                        Accomplished Infrastructure, Cloud, and SRE Specialist with over a decade of expertise. Highly experienced in designing, implementing, and managing sophisticated IT infrastructures, both on-premises and in the cloud. 
-                        Expertise in harnessing cloud technologies and Infrastructure as Code (IaC) to streamline deployment and enhance operational efficiency. Proven proficiency in Agile methodologies, driving significant improvements in cloud 
-                        infrastructure, system monitoring, and CI/CD processes. Recognized for delivering measurable gains in scalability, cost efficiency, and interdepartmental collaboration.
+                        Seasoned infrastructure, cloud and SRE specialist with experience in designing, implementing, troubleshooting, and managing complex IT infrastructure in both on-premise and in the cloud.
+                        Excelling in leveraging cloud technologies, Infrastructure as Code (IaC), and GitOps to design and maintain cloud-based solutions, automating infrastructure deployment to enhance efficiency. 
+                        Proficient in agile methodologies and proven track record of driving improvements in system monitoring and CI/CD processes, resulting in measurable advancements in scalability, cost savings 
+                        and cross-team collaboration.
+                        
+                        3x AWS Certified, Microsoft Azure Certified, CompTIA A+ Certified, LPI Certified
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/mconnaker/"><i class="fab fa-linkedin-in"></i></a>
@@ -70,17 +73,23 @@
                             <h3 class="mb-0">Associate Director, Site Reliability Engineer</h3>
                             <div class="subheading mb-3">Kyndryl</div>
                             <p>  
-                                As a contracted Site Reliability Engineer, I supported a client's multi-cloud infrastructure, primarily focusing on AWS while also managing Azure and GCP. Recognized as the AWS Subject Matter Expert, I delivered high-level 
-                                solutions to ensure robust, scalable, and secure cloud operations. I Developed Python scripts using the AWS SDK (Boto3) for automation, engineered tailored IAM policies for secure access, and architected CI/CD pipelines to 
-                                enhance software delivery. Additionally, created Ansible playbooks for routine task automation and implemented Terraform configurations to uphold the infrastructure as code approach. My role involved fostering strong internal 
-                                collaboration, ensuring optimal cloud infrastructure performance and reliability across all platforms.
-
-                                Projects
-                                Patch Management: Designed and managed the deployment of patch management solutions using AWS Systems Manager, ensuring systems remained up-to-date and secure.
-
-                                Golden Image Deployment: Designed and implemented a sophisticated golden image strategy, catering to a multi-organization, multi-account, and multi-region setup.
-
-                                Rancher Deployment: Designed and implemented Rancher on ec2 in AWS. Configured Rancher to monitor non-prod and dev/sandbox EKS environments in a multi-account, multi-region setup.
+                                Contracted as a Site Reliability Engineer to support a client's multi-cloud infrastructure across AWS, Azure, and GCP, with a primary focus on AWS. Recognized as the AWS Subject Matter
+                                Expert, delivering high-level solutions and ensuring robust, scalable, and secure cloud operations.
+                                
+                                Projects:
+                                Collaborated with client to implement a comprehensive golden image strategy using HashiCorp Packer. This solution incorporated CIS image hardening for both Linux and Windows environments, 
+                                along with deployment of security tools. Additionally, the SSM agent was deployed for RHEL servers to enhance management capabilities. To ensue efficiency, we designed the solution for 
+                                rapid deployment across multiple accounts and regions within AWS organizations.
+                                
+                                Collaborated with the client to implement a robust patching solution using AWS Systems Manager. This involved deployment endpoints for private subnets, creating an IAM profile to enable 
+                                Systems Manager to effectively manage the EC2 instances, and installing SSM agent on existing RHEL servers to streamline operations. 
+                                
+                                Collaborated with client to successfully deploy Prisma Cloud within AWS. This solution involved executing CloudFormation Stack set templates to facilitate access across multiople organizations 
+                                and accounts, as well as deploying Prisma Cloud Defender on ECS to enhance security and monitoring capabilities. 
+                                
+                                Developed an EC2 inventory that provided real-time information on all active EC2's within clients account. Ansible retrieved selected information from EC2 services in selected regions and stored 
+                                them to a csv file. Using Azure Devops, developed a robust pipeline that iterated over all accounts and created an single artifact after the pipeline ran. The inventory file provided real time 
+                                data on what EC2s were currently in the accounts, which then could be used by Security to identify which EC2 was missing from their security tools.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2022 - Present</span></div>
@@ -230,8 +239,10 @@
                             <img width="150" height="150"  src="assets/img/AWS-Certified-Cloud-Practitioner.png">
                         </li>
                         <li class="list-inline-item">
-                            <!---AWS Certified Cloud Practitioner --->
                             <img width="150" height="150" src="assets/img/AWS-Certified-SysOps.png">
+                        </li>
+                        <li class="list-inline-item">
+                            <img width="150" height="150" src="assets/img/AWS-Certified-Developer.png">
                         </li>
                         <li class="list-inline-item">
                             <img width="150" height="150"  src="assets/img/CompTIA_A_2Bce.png">
