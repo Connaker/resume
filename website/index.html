@@ -1,264 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Michael Connaker</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Michael Connaker</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Michael
-                        <span class="text-primary">Connaker</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Georgetown, TX 78628 · (512) 786-7994 ·
-                        <a href="mailto:name@email.com">michael@connaker.org</a>
-                    </div>
-                    <p class="lead mb-5">
-                        Seasoned infrastructure, cloud and SRE specialist with experience in designing, implementing, troubleshooting, and managing complex IT infrastructure in both on-premise and in the cloud.
-                        Excelling in leveraging cloud technologies, Infrastructure as Code (IaC), and GitOps to design and maintain cloud-based solutions, automating infrastructure deployment to enhance efficiency. 
-                        Proficient in agile methodologies and proven track record of driving improvements in system monitoring and CI/CD processes, resulting in measurable advancements in scalability, cost savings 
-                        and cross-team collaboration.
-                        <br><br>
-                        3x AWS Certified, Microsoft Azure Certified, CompTIA A+ Certified, LPI Certified
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/mconnaker/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/csolutions-git"><i class="fab fa-github"></i></a>
-            <!--        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>--->
-            <!--        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>-->
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Associate Director, Site Reliability Engineer</h3>
-                            <div class="subheading mb-3">Kyndryl</div>
-                            <p>  
-                                Contracted as a Site Reliability Engineer to support a client's multi-cloud infrastructure across AWS, Azure, and GCP, with a primary focus on AWS. Recognized as the AWS Subject Matter
-                                Expert, delivering high-level solutions and ensuring robust, scalable, and secure cloud operations.
-                                <br><br>
-                                Projects:<br>
-                                Collaborated with client to implement a comprehensive golden image strategy using HashiCorp Packer. This solution incorporated CIS image hardening for both Linux and Windows environments, 
-                                along with deployment of security tools. Additionally, the SSM agent was deployed for RHEL servers to enhance management capabilities. To ensue efficiency, we designed the solution for 
-                                rapid deployment across multiple accounts and regions within AWS organizations.
-                                <br><br>
-                                Collaborated with the client to implement a robust patching solution using AWS Systems Manager. This involved deployment endpoints for private subnets, creating an IAM profile to enable 
-                                Systems Manager to effectively manage the EC2 instances, and installing SSM agent on existing RHEL servers to streamline operations. 
-                                <br><br>
-                                Collaborated with client to successfully deploy Prisma Cloud within AWS. This solution involved executing CloudFormation Stack set templates to facilitate access across multiople organizations 
-                                and accounts, as well as deploying Prisma Cloud Defender on ECS to enhance security and monitoring capabilities. 
-                                <br><br>
-                                Developed an EC2 inventory that provided real-time information on all active EC2's within clients account. Ansible retrieved selected information from EC2 services in selected regions and stored 
-                                them to a csv file. Using Azure Devops, developed a robust pipeline that iterated over all accounts and created an single artifact after the pipeline ran. The inventory file provided real time 
-                                data on what EC2s were currently in the accounts, which then could be used by Security to identify which EC2 was missing from their security tools.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2022 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Site Reliability Engineer</h4>
-                            <div class="subheading mb-3">Brightpearl</div>
-                            <p>
-                                As a key Site Reliability Engineer (SRE) at Brightpearl, I provided Tier 3 Break/Fix support for the company's AWS multi-account infrastructure, focusing on resolving large-scale production outages and technical issues to ensure 
-                                continuous operation and optimal performance. I partnered with cross-functional teams to diagnose and resolve complex technical issues, created and maintained Ansible playbooks for routine task automation, and managed critical 
-                                servers, databases, and Amazon SQS systems for 24/7 production operations. Additionally, I led incident management efforts, facilitated Agile practices through regular SCRUM meetings, and implemented Terraform configurations to 
-                                reinforce Infrastructure as Code principles, expertly managing cloud infrastructure with a suite of AWS services.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - June 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Site Reliability Engineer</h4>
-                            <div class="subheading mb-3">Privo</div>
-                            <p>
-                                Provided dedicated Tier 1 and Tier 2 support for Privo-Navisite clients, specializing in the management and optimization of AWS cloud infrastructure to ensure seamless operations and efficient resource management. I designed, 
-                                implemented, and maintained AWS CloudFormation configurations to automate the provisioning and management of cloud resources, ensuring consistency, scalability, and operational efficiency. By expertly managing and optimizing 
-                                cloud infrastructure across various AWS services, I delivered robust, tailored solutions that enhanced overall performance and reliability.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2021 - August 2021</span></div>
-                    </div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mike in the Cloud - Digital Resume Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">IBM</div>
-                            <h4 class="mb-0">&nbsp;&nbsp;&#x2022;&nbsp; Operations Team Lead</h4>
-                            <div class="flex-shrink-0"><span class="text-secondary">&nbsp;&nbsp;&nbsp;&nbsp; CIO Managed IBM Cloud Infrastructure</span></div>
-                            <div class="flex-shrink-0"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp; September 2019 - January 2021</span></div>
-                            <p></p>
-                            <h4 class="mb-0">&nbsp;&nbsp;&#x2022;&nbsp; Cloud Infrastructure Specialist</h4>
-                            <div class="flex-shrink-0"><span class="text-secondary">&nbsp;&nbsp;&nbsp;&nbsp; CIO Managed IBM Cloud Infrastructure</span></div>
-                            <div class="flex-shrink-0"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp; February 2019 - September 2019</span></div>
-                            <p></p>
-                            <h4 class="mb-0">&nbsp;&nbsp;&#x2022;&nbsp; Windows 10 Specialist</h4>
-                            <div class="flex-shrink-0"><span class="text-secondary">&nbsp;&nbsp;&nbsp;&nbsp; CIO Managed IBM Cloud Infrastructure</span></div>
-                            <div class="flex-shrink-0"><span class="text-primary">&nbsp;&nbsp;&nbsp;&nbsp; December 2017 - February 2019</span></div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2017 - January 2021</span></div>                            
-                        <p></p>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Systems Analyst 1</h4>
-                            <div class="subheading mb-3">State of Texas, Texas State Guard</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2016 - December 2017</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Hardware Support Specialist</h4>
-                            <div class="subheading mb-3">Pulse Systems, Inc.</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2014 - February 2016</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Customer Support Technician</h4>
-                            <div class="subheading mb-3">Via Christi Health</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2014 - April 2015</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Systems Administrator</h4>
-                            <div class="subheading mb-3">SecureNet Alarm Systems, Inc.</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2013 - February 2014</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h4 class="mb-0">Network Engineer and IT Consultant</h4>
-                            <div class="subheading mb-3">Ribbit Business Solutions</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2012 - January 2013</span></div>
-                    </div>
-                </div>
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 
-               </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Southern New Hampshire University</h3>
-                            <div class="subheading mb-3">Bachelor of Arts</div>
-                            <div>General Studies - Concentration in Essentials of IT</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - Dec 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Texas State Technical College</h3>
-                            <div class="subheading mb-3">Associates Applied Science</div>
-                            <div>Computer Networking, Systems Administration</div>
-                            <p></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2004 - May 2007</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Technical</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img src="assets/img/icons8-ansible-50.png"></li>
-                        <li class="list-inline-item"><i class="fab fa-bitbucket"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gitlab"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><img src="assets/img/icons8-terraform-50.png"></li>
-                    </ul>
-                    <div class="subheading mb-3">Cloud</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img src="assets/img/icons8-amazon-web-services-50.png"></li>
-                        <li class="list-inline-item"><img src="assets/img/icons8-azure-50.png"></li>
-                    </ul>
-                    <div class="subheading mb-3">Soft</div>
-                        <li class="list-inline-item">Leadership</li>
-                        <li class="list-inline-item">Project Management</li>
-                        <li class="list-inline-item">Agile Methodology</li>
-                </div>
-            </section>
-<!--            All <a target="_blank" href="https://icons8.com">icons</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> --->
-            <hr class="m-0" />
-            <!-- Certifications-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li class="list-inline-item">
-                            <img width="150" height="150"  src="assets/img/AWS-Certified-Cloud-Practitioner.png">
-                        </li>
-                        <li class="list-inline-item">
-                            <img width="150" height="150" src="assets/img/AWS-Certified-SysOps.png">
-                        </li>
-                        <li class="list-inline-item">
-                            <img width="150" height="150" src="assets/img/AWS-Certified-Developer.png">
-                        </li>
-                        <li class="list-inline-item">
-                            <img width="150" height="150"  src="assets/img/CompTIA_A_2Bce.png">
-                        </li>
-                        <li class="list-inline-item">
-                            <img width="150" height="150"  src="assets/img/azure-fundamentals.png">
-                        </li>
-                    </ul>
-                </div>
-            </section>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <h1 class="sitename">Michael Connaker</h1>
+    </a>
+
+    <div class="social-links text-center"> 
+      <a href="https://github.com/Connaker" class="twitter"><i class="bx bxl-github"></i></a>
+      <a href="https://linkedin.com/in/mconnaker" class="instagram"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://hashnode.connaker.org/" target="_blank" class="blogger" animation='tada'><i class="bx bxl-blogger"></i></a> 
+    </div>
+
+    <nav id="navmenu" class="navmenu navbar">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about" class="nav-link scrollto active"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#experience"><i class="bx bx-file-blank navicon"></i> Experience</a></li>
+        <li><a href="#education"><i class="bx bxs-school navicon"></i> <span>Education</span></a></li>
+        <li><a href="#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+        <li><a href="#compentencies"><i class="bx bx-server navicon"></i> Competencies</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/cloud.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h1>Welcome to My </h1>
+        <h1>Digital Resume</h1>
+        <p>I am a <span class="typed" data-typed-items="Cloud Engineer, Site Reliability Engineer, Problem Solver "></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded-circle" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h3>Senior Site Reliability Engineer &amp; Cloud Engineer</h3>
+            <p class="fst-italic"> It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.</p>
+            </p> My name is Michael Connaker, and I am an experienced Site Reliability Engineer and Cloud Engineer. </p>
+
+            <p></p>
+
+            <p>
+              With over a decade of experience in Information Technology, I have worked across a broad spectrum of disciplines, including networking, systems administration, desktop support, 
+              and cloud management. Currently I specialize as a Site Reliability Engineer and Cloud Engineer, where my expertise in Infrastructure as Code (IaC), GitOps, Configuration Managment
+              and CI/CD tools is used to automate deployments for improved efficiency, scalability, and cost optimization. I have a strong ability to drive collaboration with clients and teams, 
+              ensuring seamless execution and delivery of results. </p>
+            
+            <p>
+              I have extensive leadership experience, serving as a Subject Matter Expert (SME) to clients and colleagues, as well as a Team Lead managing a team of 8 to 12 members. In this role, 
+              I provided guidance and direction, collaborated with management to develop and enhance onboarding procedures, SLAs, SLOs, technical documentation, and shaped the team’s vision and strategy. 
+              Additionally, as an Agile leader, I facilitated sprints, reported progress to senior leadership, and led Scrum of Scrums and retrospectives to drive continuous improvement.
+            </p>
+
+            <p>
+              I am educated with a Bachelors of Arts in General Studies and Associates of Applied Science in Computer Networking & Systems Administration. I have also achieved
+              several industry certifications.
+            </p>
+
+            <p>
+              Outside the technical realm, I’m an avid reader with a passion for Sci-Fi and Supernatural genres, and a dedicated gamer, having explored countless 
+              virtual worlds across multiple platforms. Yet, my most fulfilling adventure is fatherhood to my two teenage daughters and a newborn son — a role that brings immense 
+              joy and fresh challenges every day.</p>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Experience</h2>
+          <ul>
+            <p><em>I am an experienced Information Technology Engineer with a demostrated history of working in various Industries. I am skilled in Systems and Network Administration,
+              Site Reliability Engineering, Cloud Infrastructure, and Devops. I have demostrated history with IaC, GitOps, automation as well as devops and SRE
+              principles.</em></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="resume-item pb-0">
+              <h4>Senior Site Reliability Engineer</h4>
+              <h5>Jun 2022 - Oct 2024</h5>
+              <p><em>Knydryl, REMOTE</em></p>
+              <p>Contracted as a Site Reliability Engineer to support a client's multi-cloud infrastructure spanning AWS, Azure and GCP. Primarily focused on AWS, recognized as a Subject-Matter Expert, delivering 
+                advanced solutions, and ensuring scalable, secure, and resilient cloud operations.</p>
+              <ul>
+                <li>Enhanced the quality and quantity of technical documents and workflows, leading to improved understanding and usage of technologies across the organization.</li>
+                <li>Consistently maintained current knowledge of AWS technologies. Researched, evaluated and tested new tools and software for potential AWS deployment, implementing proof of concept environments 
+                  in sandbox to ensure thorough testing and validation.</li>
+                <li>Collaborated with managers to define and track project milestones, deliverables, and issues using agile methodology, ensuring effective project management and continuous improvement.</li>
+                <li>Ensured compliance with corporate policies and standards to minimize costs associated with the implementation of applications and services in AWS.</li>
+                <li>Cultivated a strong partnership with the clients' internal teams, fostering seamless communication and collaboration across infrastructure domains.</li>
+                <li>Developed AWS SDK Pythons scripts to retrieve data from AWS and deployment.</li>
+                <li>Architect and maintain CI/CD deployment pipelines to streamline infrastructure deployments and enhance reliability.</li>
+                <li>Engineered tailored IAM policies, roles and user management for secure, delegated access within AWS.</li>
+                <li>Developed Ansible playbooks to automate routine tasks such as software installation, configuration management and infrastructure provisioning at scale.</li>
+                <li>Implemented and maintained Terraform configuration to automate the provisioning and management of cloud resources, reinforcing the Infrastructure as Code (IaC) approach.</li>
+              </ul>
+              <h5>Projects</h5>
+              <p>
+                Developed a solution that incorporated CIS image hardening for both Linux and Windows environments, along with deployment of security tools using Packer and Ansible to ensure efficiency, 
+                designed the solution for repaid deployment across multiple accounts and regions.
+              </p>
+              <p>
+                Implemented a robust patching solution using AWS Systems Manager. Deployed VPC endpoints, created IAM instance role profile to enable AWS Systems Manager to effectively manage the EC2 instances, 
+                and developed an Ansible playbook to install SSM agents on existing RHEL servers.
+              </p>
+              <p>
+                Collaborated with client to successfully deploy Prisma Cloud within AWS. This solution involved executing CloudFormation StackSets templates to facilitate access across multiple organizations and accounts, 
+                as well as deploying Prisma Cloud Defender on ECS to enhance security and monitoring capabilities.
+              </p>
+              <p>
+                Collaborated with client to utilize FinOPs in AWS through the Cost Optimization Hub. Actions taken from data collected included right-sizing EC2 and RDS instance Types, and development of Instance Scheduling to 
+                shut down servers overnight in sandbox and development accounts.
+              </p>
+              <p>
+                Developed an EC2 inventory system using Ansible to provide real-time data on active EC2s across selected regions, storing results in a CSV file. Built a robust Azure DevOps pipeline to iterate over accounts, 
+                generating a single artifact after each run.
+              </p>
+
+            </div>
+            <div class="resume-item">
+              <h4>Site Reliabilty Engineer</h4>
+              <h5>Aug 2021 - Jun 2022</h5>
+              <p><em>Brightpearl, REMOTE</em></p>
+              <p>
+                As a Site Reliability Engineer (SRE) at Brightpearl, supported an AWS multi-account infrastructure using DevOps and SRE practices and ensured scalable, secure, and resilient cloud operations.
+              </p>
+              <ul>
+                <li>Delivered Tier3 break/fix support with a specific focus on swift resolution of large-scale production outages to drive continuous operation and optimal performance.</li>
+                <li>Partnered with cross-functional teams to diagnose and resolve complex technical issues.</li>
+                <li>Transformed Terraform from a monolith project approach to using modules for reusable bits of code that can be used to organize configuration into logical components.</li>
+                <li>Created Ansible playbooks to deploy software onto servers.</li>
+                <li>Facilitated and led agile scrum meetings.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>Site Reliabilty Engineer</h4>
+              <h5>Jan 2021 - Aug 2021</h5>
+              <p><em>Privo-Navisite, REMOTE</em></p>
+              <p>As a Site Reliability engineer at Privo-Navisite, facilitated and delivered tier 1 and tier 2 support for clients, efficiently managing and optimizing AWS cloud infrastructure, resulting in seamless 
+                operations and improved resource management.</p>
+              <ul>
+                <li>Designed, implemented and maintained AWS CloudFormation configurations to automate the provisioning and management of cloud resources, ensuring consistency, scalability, and operational efficiency.</li>
+                <li>Expertly managed and optimized cloud infrastructure across various AWS services and delivered robust, tailored solutions that enhanced overall performance and reliability.</li>
+                <li>Fostered strong partnership and collaboration with clients on ticket and project requests, ensuring seamless and timely communication on all requests.</li>
+              </ul>
+            </div>
+            <div class="resume-item pb-0">
+              <h4>Operations Team Lead</h4>
+              <h5>Sept 2019 - Jan 2021</h5>
+              <p><em>IBM, Austin, TX</em></p>
+              <p>Equipped team with the leadership and direction needed for the success of daily activities and long-term initiatives for a sophisticated, virtualized infrastructure of 5K+ Linux and Windows servers on the IBM Cloud.</p>
+              <ul>
+                <li>Leveraged time management and organization skills to ensure success in a 24/7 production setting.</li>
+                <li>Championed the creation of an inclusive, support team culture with a focus on team development and high morale.</li>
+                <li>Employed communication skills as the liaison for backend outage issues involving coordination with network teams to solve disruptions and reporting production outages to upper management to minimize downtime.</li>
+                <li>Designed and maintained on-call schedules, developed a team charter aligning with SRE and Agile goals, and drafted comprehensive documentation and policies.</li>
+                <li>Oversaw server management, leading incident management processes, fostering open communication and ensuring compliance with SLOs to maintain high standards of service and reliability.</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Cloud Infrastructure Specialist</h4>
+              <h5>Feb 2019 - Sept 2019</h5>
+              <p><em>IBM, Austin, TX</em></p>
+              <p>
+                As a Cloud Infrastructure Specialist at IBM, played a key role in the optimization of a sophisticated virtualized environment of Linux and Windows servers, which included overseeing the administration of essential services 
+                (including OS, storage, networking, and middleware), backend storage systems, networking infrastructure, and the introduction of new optimizations for performance, scalability, and security.
+              </p>
+            </div> 
+            <div class="resume-item">
+              <h4>Windows 10 Specialist</h4>
+              <h5>Dec 2017 - Feb 2019</h5>
+              <p><em>IBM, Austin, TX</em></p>
+              <p>
+                As a Windows 10 specialist at IBM, played a key role in fostering relationships with senior Windows Engineers to enhance problem-solving efficiency and work around solutions. Consistently documented technical problems and 
+                maintained a collection of technical resolution documents and workflows for the team and managed calls and chats, diagnosing, and resolving issues to minimize disruption and optimize system performance. Collaborated with the 
+                development of a team charter aligned with SRE and Agile principles to foster a unified direction and operational focus. Fostered relationships with senior Windows Engineers to enhance problem-solving efficiency and workaround 
+                solutions.
+              </p>
+              <ul>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Systems Analyst 1</h4>
+              <h5>Mar 2016 - Dec 2017</h5>
+              <p><em>State of Texas TMD TXSG, Austin, TX</em></p>
+              <ul>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Hardware Technician</h4>
+              <h5>Sept 2014 - Mar 2016</h5>
+              <p><em>Pulse Systems, Wichita, KS</em></p>
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /Experience Section -->
+
+    <!-- Education Section -->
+    <section id="education" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Education</h2>
+          <p class="fst-italic"> Education is not a destination, but a continous Journey.</p>
+            <p><em></em></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="resume-item pb-0">
+              <h4>Masters Business Administration</h4>
+              <h4>Concentration: Information Technology Management</h4>
+              <h5>Oct 2024 - Current</h5>
+              <p><em>Southern New Hampshire University, ONLINE</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelors of Arts, General Studies</h4>
+              <h4>Concentration: Essentials of Information Technology</h4>
+              <h5>Conferred: Jan 2023</h5>
+              <p><em>Southern New Hampshire unviersity, ONLINE</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Associates of Applied Science,</h4>
+              <h4>Computer Networking & Systems Administration</h4>
+              <h5>Conferred: May 2007</h5>
+              <p><em>Texas State Technical College, Waco, TX</em></p>
+            </div>
+        </div>
+      </div>
+    </section>  <!-- /Education Section -->
+
+     <!-- Competencies Section -->
+    <section id="certifications" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Certifications</h2>
+        </div>
+        <div class="resume-item">
+          <h4>Cloud</h4>
+          <a href="https://www.credly.com/earner/earned/badge/a8534329-6af6-4339-bcd4-e7b94cda4d2f" target="_blank"><img src="assets/img/certs/AWS-Certified-Cloud-Practitioner.png" alt="AWS Certified Cloud Practitioner" height="150" weight="150"></a>
+          <a href="https://www.credly.com/earner/earned/badge/bf332961-7c0f-42ac-8980-89bb4e37dcd5" target="_blank"><img src="assets/img/certs/AWS-Certified-SysOps.png" alt="AWS Certified SysOps Administrator" height="150" weight="150"></a>
+          <a href="https://www.credly.com/earner/earned/badge/cc1c36f7-52a5-41dd-a5d4-34fd1e6078bd" target="_blank"><img src="assets/img/certs/AWS-Certified-Developer.png" alt="AWS Certified Developer" height="150" weight="150"></a>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/MichaelConnaker-0024/7B9F9E09355B0175?sharingId=C6B20B2566DFA3DD" target="_blank"><img src="assets/img/certs/azure-fundamentals.png" alt="Microsoft Azure azure-fundamentals" height="150" weight="150"></a>
+        </div>
+        <br>
+        <br>
+        <div class="resume-item">
+          <h4>Site Reliability Engineer</h4>
+          <a href="https://www.credly.com/earner/earned/badge/b459f8a8-21a6-439a-aa74-f71c31a88df3" target="_blank"><img src="assets/img/certs/kyndryl-sre-bootcamp.png" alt="Kyndryl SRE bootcamp" height="150" weight="150"></a>
+          <a href="https://www.credly.com/earner/earned/badge/7d47a1d3-8384-4120-bebe-6ea05799eaf9" target="_blank"><img src="assets/img/certs/kyndryl-sre-practitioner.png" alt="Kyndryl SRE Practitioner" height="150" weight="150"></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Competencies Section -->
+    <section id="compentencies" class="services">
+
+      <!-- Competencies Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Competencies</h2>
+      </div><!-- End Competencies Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fas fa-cloud"></i></div>
+            <div>
+              <h4 class="title">Public Cloud</a></h4>
+              <p class="description">
+                Expertise in creating and deploy well-architected applications and Infrastructure
+                in AWS.
+              </p>
+            </div>
+          </div>
+          <!-- End Competency Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fab fa-linux"></i></div>
+            <div>
+              <h4 class="title">Linux</a></h4>
+              <p class="description">Proficient in Linux Administration on multiple distributions</p>
+            </div>
+          </div><!-- End Competency Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="fas fa-code"></i></div>
+            <div>
+              <h4 class="title">Scripting</a></h4>
+              <p class="description">Experience in scripting with Bash, Python and Powershell</p>
+            </div>
+          </div><!-- End Competency Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><iconify-icon icon="carbon:document-configuration" width="24" height="24" style="color:white"></iconify-icon></div>
+            <div>
+              <h4 class="title">Configuration Management</a></h4>
+              <p class="description">Profiency with tools like Ansible, Docker, Git, Terraform</p>
+            </div>
+          </div><!-- End Competency Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><iconify-icon icon="tabler:automation" width="24" height="24"  style="color: white"></iconify-icon></div>
+            <div>
+              <h4 class="title">Automation</a></h4>
+              <p class="description">Experience with tools like ArgoCD, Azure Devops, Jenkins, Kubernetes</p>
+            </div>
+          </div><!-- End Competency Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Competencies Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I hired Micheal into Kyndryl , managing him for his first year in the company. Michael is an outstanding technical resource who possess a broad range of skills and knowledge as a Senior Site Reliability Engineer. 
+                    His focus has been supporting clients multi-cloud infrastructure with a focus on AWS during this time (AWS Certified Web Developer). 
+                    <br/><br/>
+                    Michael quickly integrated himself into the clients' internal team, earning their trust and respect delivering critical solutions for their environment with highest satisfaction. He is self-motivated and demonstrates
+                    the ability to adapt to dynamically changing environments. Michael will be an asset to any organization!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/dhomar.jpg" class="testimonial-img" alt="">
+                <h3>David Homer</h3>
+                <h4>Partner, Kyndryl</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mike Connaker is a Cloud Infrastructure IAM Guru with a great personality & an attitude that inspires everyone around him. We routinely worked together on pair programing video sessions that involved maintaining 
+                    automated GitOps pipelines while deploying AWS Infrastructure. <br/><br/>
+                    He is Knowledgeable, reliable & the team could always depend on Michael to be online to clarify issues or answer questions about Machine Images, Cloud Networking or IAM permission sets. Mike’s professionalism really 
+                    shines when he explains the challenges of making changes to a complex configuration. He’s transparent & delivers his unbiased thoughts in a way that makes the audience respect his opinion.
+                    <br/><br/>
+                    Michael is always working towards his next cloud certification and is willing to demonstrate his accomplishments with proof of concepts that inspire teams to consider new approaches while solving problems. He’s a 
+                    hardworking engineer that would be an asset to any team.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/cbomar.jpg" class="testimonial-img" alt="">
+                <h3>Chris Bomar</h3>
+                <h4>Sr. Cloud Platform Engineer, Client</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Michael was a crucial part of my team at VF Corporation. I could rely on Michael for many things like creating processes of automation for custom, hardened images that would feed into our environments.
+                    <br/><br/>
+                    When I didn’t have the best solution in mind, Michael stepped in and took ownership of key problems that helped me and my teammates to be successful. 
+                    <br/><br/>
+                    Michael is top notch reliable and a good influence on his peers, he also knows how to prioritize work and as a manager made my job much easier when it came to making those kinds of decisions. 
+                    <br/><br/>
+                    I know any team Michael is in will have a strong positive impact and will show solid measurable results. .</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kharmon.jpg" class="testimonial-img" alt="">
+                <h3>Kenny Harmon</h3>
+                <h4>Manager Cloud Platform Services, Client</h4>
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+   
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+          <div class="copyright text-center ">
+          </div>
+      </div>
+    </div>
+      <!-- <div class="credits"> -->
+      
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-
-
